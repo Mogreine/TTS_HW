@@ -16,10 +16,10 @@ export OMP_NUM_THREADS=1
 : ${LEARNING_RATE:=0.1}
 
 # Adjust these when the amount of data changes
-: ${EPOCHS:=10}
-: ${EPOCHS_PER_CHECKPOINT:=5}
-: ${WARMUP_STEPS:=60}
-: ${KL_LOSS_WARMUP:=10}
+: ${EPOCHS:=1000}
+: ${EPOCHS_PER_CHECKPOINT:=10}
+: ${WARMUP_STEPS:=1000}
+: ${KL_LOSS_WARMUP:=100}
 
 # Train a mixed phoneme/grapheme model
 : ${PHONE:=true}
